@@ -3,25 +3,30 @@
 //3 -> 1, 8, 27
 //5 -> 1, 8, 27, 64, 125
 
-string Cub (int N)
-{
-    string b = "";
-    int i = 1;
-    while (i <= N)
-    {
-        b1 = b + (i * i * i);
-        i++;
-    } 
-    return(b1);  
-}
 
-try
+void Cub(int[]massiv1)
 {
-    Console.WriteLine("Enter number N: ");
-    int N = int.Parse(Console.ReadLine());
-    Console.WriteLine(Cub(N));
+    int size = massiv1.Length;
+    int i = 1;
+    while(i < size)
+    {
+        massiv1[i] = (i * i *i);
+        i++;
+    }
 }
-catch
+void PrintArray (int[]massiv)
 {
-    Console.WriteLine("You should enter numbers");
+    int length = massiv.Length;
+    int index = 1;
+    while (index < length)
+    {
+        Console.WriteLine(massiv[index] + " ");
+        index++;
+    }
 }
+Console.Write("Введите число ");
+int N = Convert.ToInt32(Console.ReadLine());
+int[]cub = new int[N+1];
+Cub(cub);
+PrintArray(cub);
+
