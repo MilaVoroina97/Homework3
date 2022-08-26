@@ -24,7 +24,7 @@ string Palindrom (string x)
  }
  catch 
  {
-    Console.WriteLine("You should enter a five-digit number");
+    Console.WriteLine("You should enter a five-digit number!!!");
 
  }
 
