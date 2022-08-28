@@ -15,8 +15,7 @@ while (sum != 0)
     int n = Convert.ToInt32(Console.ReadLine());
     sum  = sum + n;
     sum2 = (sum2 + (n*n));
-    if (sum == 0)
-    break;
+    
 }
 Console.WriteLine(sum);
 Console.Write(sum2);
