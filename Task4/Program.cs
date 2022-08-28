@@ -4,7 +4,8 @@
 //Гарантируется, что в какой-то момент сумма введённых чисел окажется равной 0, после этого считывание продолжать не нужно.
 //В примере мы считываем числа 1, -3, 5, -6, -10, 13; в этот момент замечаем, что сумма этих чисел равна нулю и выводим сумму их 
 //квадратов, не обращая внимания на то, что остались ещё не прочитанные значения.
-
+try
+{
 Console.WriteLine("Enter you number");
 int x = Convert.ToInt32(Console.ReadLine());
 int sum = (0 + x);
@@ -19,4 +20,8 @@ while (sum != 0)
 }
 Console.WriteLine(sum);
 Console.Write(sum2);
-
+}
+catch
+{
+    Console.WriteLine("Please enter just integer numbers");
+}
