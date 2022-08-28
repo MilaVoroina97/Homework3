@@ -36,5 +36,5 @@ try
 
 catch
 {
-    Console.WriteLine(" The number N should be > 0");
+    Console.WriteLine(" The number N should be > 0 and should be integer number");
 }
