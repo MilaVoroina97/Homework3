@@ -24,9 +24,17 @@ void PrintArray (int[]massiv)
         index++;
     }
 }
-Console.Write("Введите число ");
-int N = Convert.ToInt32(Console.ReadLine());
-int[]cub = new int[N+1];
-Cub(cub);
-PrintArray(cub);
+try
+{
+    
+    Console.Write("Введите число ");
+    int N = Convert.ToInt32(Console.ReadLine());
+    int[]cub = new int[N+1];
+    Cub(cub);
+    PrintArray(cub);
+}
 
+catch
+{
+    Console.WriteLine(" The number N should be > 0");
+}
