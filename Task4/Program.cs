@@ -5,10 +5,11 @@
 //В примере мы считываем числа 1, -3, 5, -6, -10, 13; в этот момент замечаем, что сумма этих чисел равна нулю и выводим сумму их 
 //квадратов, не обращая внимания на то, что остались ещё не прочитанные значения.
 
-int sum = 0;
-int sum2 = 0;
-int n = 1;
-while (n != 0)
+Console.WriteLine("Enter you number");
+int x = Convert.ToInt32(Console.ReadLine());
+int sum = (0 + x);
+int sum2 = (0 + (x*x));
+while (sum != 0)
 {
     Console.WriteLine("Enter you number");
     int n = Convert.ToInt32(Console.ReadLine());
